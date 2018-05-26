@@ -1,4 +1,4 @@
-cRypto: Pull cryptocurrency data in tidy format form coinmarketcap API
+cRypto: Pull cryptocurrency data in tidy format from coinmarketcap API
 ---------------
 
 **Author :** [Adelmo Filho](http://adelmofilho.github.io/)<br/>
