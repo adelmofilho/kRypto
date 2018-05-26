@@ -27,15 +27,11 @@
 listing <- function() {
 
   listing <- 'https://api.coinmarketcap.com/v2/listings/' %>%
-    httr::GET()
-
-  # %>%
-  #   httr::content() %$% data %>%
-  #   purrr::map(as.data.frame) %>%
-  #   dplyr::bind_rows() %>%
-  #   dplyr::as_tibble()
-
-
+    httr::GET() %>%
+    httr::content() %$% data %>%
+    purrr::map(as.data.frame) %>%
+    dplyr::bind_rows() %>%
+    dplyr::as_tibble()
 
   return(listing)
 }
