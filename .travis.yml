@@ -1,0 +1,5 @@
+r_packages:
+  - cRypto
+
+after_success:
+  - Rscript -e 'library(cRypto); codecov()'
