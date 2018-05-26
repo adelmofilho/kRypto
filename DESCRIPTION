@@ -11,3 +11,4 @@ LazyData: true
 RoxygenNote: 6.0.1
 Depends: R (>= 3.4.0), dplyr
 Imports: purrr, httr
+Suggests: testthat
