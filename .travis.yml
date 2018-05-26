@@ -3,18 +3,6 @@ cache: packages
 sudo: false
 warnings_are_errors: true
 
-matrix:
-  include:
-  - r: release
-  - r: oldrel
-    env: _R_CHECK_FORCE_SUGGESTS_=false
-
-addons:
-  apt:
-    packages:
-      - libgsl0-dev # for topicmodels
-      - libxml2-dev # for XML, a dependency of quanteda
-
 r_packages:
   - covr
   - cRypto
