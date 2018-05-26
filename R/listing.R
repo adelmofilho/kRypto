@@ -10,7 +10,6 @@
 #'
 #' @name listing
 #'
-#' @import magrittr
 #' @import dplyr
 #' @import httr
 #' @import purrr
@@ -26,12 +25,17 @@
 
 listing <- function() {
 
-  listing <- 'https://api.coinmarketcap.com/v2/listings/' %>%
+  delta <- function(x){x %>% mutate_all(as.character)}
+
+  a <- 'https://api.coinmarketcap.com/v2/listings/' %>%
     httr::GET() %>%
-    httr::content() %$% data %>%
+    httr::content()
+
+   b <- a$data %>%
     purrr::map(as.data.frame) %>%
+    purrr::map(delta) %>%
     dplyr::bind_rows() %>%
     dplyr::as_tibble()
 
-  return(listing)
+  return(b)
 }
