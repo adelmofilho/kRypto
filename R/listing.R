@@ -13,7 +13,6 @@
 #' @import dplyr
 #' @import httr
 #' @import purrr
-#' @importFrom purrr set_names
 #'
 #'
 #' @examples
