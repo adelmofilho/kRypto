@@ -1,6 +1,6 @@
-# cRypto <img src="tools/logo.png" align="right"/>
+# kRypto <img src="tools/logo.png" align="right"/>
 
-cRypto: Pull cryptocurrency data in tidy format from coinmarketcap API
+kRypto: Pull cryptocurrency data in tidy format from coinmarketcap API
 ---------------
 
 **Author :** [Adelmo Filho](http://adelmofilho.github.io/)<br/>
