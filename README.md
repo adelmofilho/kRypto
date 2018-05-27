@@ -1,4 +1,4 @@
-# kRypto <img src="tools/logo.png" align="right"/>
+# kRypto <img src="tools/logo.png" align="right" height="100" width="100"/>
 
 kRypto: Pull cryptocurrency data in tidy format from coinmarketcap API
 ---------------
