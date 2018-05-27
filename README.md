@@ -14,7 +14,7 @@ You can install the development version from Github with [devtools](https://gith
 
 ```r
 library(devtools)
-install_github("adelmofilho/cRypto")
+install_github("adelmofilho/kRypto")
 ```
 
 ### Usage
@@ -23,7 +23,7 @@ To gather current data of cryptocurrencies, use function `ticker`.
 
 
 ```r
-library(cRypto)
+library(kRypto)
 
 current_data <- ticker(cryptocurrency = c("BTC", "PPC"))
 
