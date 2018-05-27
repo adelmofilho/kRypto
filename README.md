@@ -1,4 +1,4 @@
-# janeaustenr <img src="tools/logo.png" align="right"/>
+# cRypto <img src="tools/logo.png" align="right"/>
 
 cRypto: Pull cryptocurrency data in tidy format from coinmarketcap API
 ---------------
