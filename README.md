@@ -7,6 +7,7 @@ kRypto: Pull cryptocurrency data in tidy format from coinmarketcap API
 **License:** [GPL-3.0](https://opensource.org/licenses/GPL-3.0)
 
 [![Build Status](https://api.travis-ci.org/adelmofilho/cRypto.svg?branch=master)](https://travis-ci.org/adelmofilho/cRypto)
+[![DOI](https://zenodo.org/badge/134989472.svg)](https://zenodo.org/badge/latestdoi/134989472)
 
 ### Installation
 
