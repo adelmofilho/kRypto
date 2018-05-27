@@ -68,6 +68,6 @@ historical
 ## # ... with 1,845 more rows
 ```
 
-**This package was written during the #IIISER - [International Seminar on Statistics with R](https://ser2018.weebly.com), at Rio de Janeiro, Brazil..**
+**This package was written during the #IIISER - [International Seminar on Statistics with R](https://ser2018.weebly.com), at Rio de Janeiro, Brazil.**
 
 <img src="tools/ser.jpg" href = "https://ser2018.weebly.com" align="middle" height="100%" width="100%"/>
