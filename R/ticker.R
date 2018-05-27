@@ -64,5 +64,5 @@ ticker <- function(cryptocurrency = c('BTC')) {
   ticker_data <- map(id, as) %>%
     purrr::map(delta) %>% bind_rows()
 
-  return(cryptocurrency_list)
+  return(ticker_data)
 }
