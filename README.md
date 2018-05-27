@@ -70,4 +70,4 @@ historical
 
 **This package was written during the #IIISER - [International Seminar on Statistics with R](https://ser2018.weebly.com), at Rio de Janeiro, Brazil..**
 
-<img href = "https://ser2018.weebly.com" src="tools/ser.jpg" align="middle" height="90%" width="90%"/>
+<img src="tools/ser.jpg" href = "https://ser2018.weebly.com" align="middle" height="100%" width="100%"/>
