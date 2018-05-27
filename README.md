@@ -20,7 +20,7 @@ install_github("adelmofilho/kRypto")
 
 ### Usage
 
-To get current data of cryptocurrencies, use function `ticker`. 
+To get current data of cryptocurrencies, use the function `ticker`. 
 
 
 ```r
@@ -43,7 +43,7 @@ current_data
 ## #   USD.percent_change_7d <dbl>
 ```
 
-To obtain historical data for cryptocurrencies, use function `historical_data`
+To obtain historical data for cryptocurrencies, use the function `historical_data`
 
 
 ```r
