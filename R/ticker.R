@@ -59,7 +59,12 @@ ticker <- function(cryptocurrency = c('BTC')) {
     dw_2
   }
 
-  id <- which(cryptocurrency_list$symbol %in% cryptocurrency)
+  row <- which(cryptocurrency_list$symbol %in% cryptocurrency)
+
+  id <- cryptocurrency_list %>%
+    slice(row) %>%
+    select(id) %>%
+    unlist() %>% as.vector()
 
   ticker_data <- map(id, as) %>%
     purrr::map(delta) %>% bind_rows() %>%
