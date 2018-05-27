@@ -30,7 +30,7 @@ historical_data <- function(cryptocurrency = c('BTC', 'PPC')){
 
   website_slug <- NULL
 
-  cryptocurrency_list <- cRypto::cryptocurrency_list
+  cryptocurrency_list <- kRypto::cryptocurrency_list
 
   row <- which(cryptocurrency_list$symbol %in% cryptocurrency)
 

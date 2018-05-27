@@ -1,6 +1,6 @@
-Package: cRypto
+Package: kRypto
 Type: Package
-Title: cRypto: Pull cryptocurrency data in tidy format form coinmarketcap API
+Title: kRypto: Pull cryptocurrency data in tidy format form coinmarketcap API
 Version: 0.1.0
 Authors@R: person("Adelmo", "Filho", email = "adelmo.aguiar.filho@gmail.com", role = c("aut", "cre"))
 Description: A wrapper for pulling cryptocurrency data in tidy format form coinmarketcap API. By automatically batching API requests, it allows you to enter an cryptocurrency's name and retrieve their historical or today data.

@@ -24,7 +24,7 @@
 
 ticker <- function(cryptocurrency = c('BTC')) {
 
-  cryptocurrency_list <- cRypto::cryptocurrency_list
+  cryptocurrency_list <- kRypto::cryptocurrency_list
 
   delta <- function(x){
 

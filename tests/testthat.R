@@ -1,4 +1,4 @@
 library(testthat)
-library(cRypto)
+library(kRypto)
 
-test_check("cRypto")
+test_check("kRypto")
