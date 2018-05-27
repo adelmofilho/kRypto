@@ -20,7 +20,7 @@ install_github("adelmofilho/kRypto")
 
 ### Usage
 
-To gather current data of cryptocurrencies, use function `ticker`. 
+To get current data of cryptocurrencies, use function `ticker`. 
 
 
 ```r
