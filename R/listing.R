@@ -12,7 +12,7 @@
 #'
 #' @import dplyr
 #' @import httr
-#' @import purrr
+#' @importFrom  purrr map
 #'
 #'
 #' @examples
