@@ -62,7 +62,8 @@ ticker <- function(cryptocurrency = c('BTC')) {
   id <- which(cryptocurrency_list$symbol %in% cryptocurrency)
 
   ticker_data <- map(id, as) %>%
-    purrr::map(delta) %>% bind_rows()
+    purrr::map(delta) %>% bind_rows() %>%
+    dplyr::as_tibble()
 
   return(ticker_data)
 }
