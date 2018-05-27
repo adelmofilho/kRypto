@@ -69,3 +69,5 @@ historical
 ```
 
 **This package was written during the #IIISER - [International Seminar on Statistics with R](https://ser2018.weebly.com), at Rio de Janeiro, Brazil..**
+
+<img src="tools/ser.jpg" align="middle" height="90%" width="90%"/>
