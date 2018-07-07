@@ -2,7 +2,6 @@
 
 export(historical_data)
 export(listing)
-export(retrive_data)
 export(ticker)
 import(dplyr)
 import(httr)
