@@ -3,7 +3,7 @@ Type: Package
 Title: Pull Cryptocurrency Data in Tidy Format Form Coinmarketcap API
 Version: 0.3.0
 Authors@R: person("Adelmo", "Filho", email = "adelmo.aguiar.filho@gmail.com", role = c("aut", "cre"))
-Description: A wrapper for pulling cryptocurrency data in tidy format form coinmarketcap API <https://api.coinmarketcap.com>. By automatically batching API requests, it allows you to enter an cryptocurrency's name and retrieve their current or historical data.
+Description: A wrapper for pulling cryptocurrency data in tidy format form 'Coinmarketcap' API <https://api.coinmarketcap.com> associated with web scraping tools. By automatically batching API requests, it allows you to enter an cryptocurrency's name and retrieve their current or historical data.
 URL: https://github.com/adelmofilho/kRypto
 BugReports: https://github.com/adelmofilho/kRypto/issues
 License: GPL-3
