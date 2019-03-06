@@ -17,9 +17,9 @@ cache:
 
 environment:
   matrix:
-  - R_VERSION: devel
-    R_ARCH: x64
-    GCC_PATH: mingw_64
+  - RTOOLS_VERSION: 64
+    CRAN: http://cran.rstudio.com
+    PKGTYPE: source
 
 build_script:
   - travis-tool.sh install_deps
