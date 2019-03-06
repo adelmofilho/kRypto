@@ -17,7 +17,7 @@ cache:
 
 environment:
   matrix:
-  - R_VERSION: 3.4.4
+  - R_VERSION: 3.5.2
     RTOOLS_VERSION: 35
     CRAN: http://cran.rstudio.com
     PKGTYPE: source
