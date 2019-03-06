@@ -15,12 +15,12 @@ cache:
 
 # Adapt as necessary starting from here
 
-environment:
-  matrix:
-  - R_VERSION: 3.5.2
-    RTOOLS_VERSION: 35
-    CRAN: http://cran.rstudio.com
-    PKGTYPE: source
+#environment:
+#  matrix:
+#  - R_VERSION: 3.5.2
+#    RTOOLS_VERSION: 35
+#    CRAN: http://cran.rstudio.com
+#    PKGTYPE: source
 
 build_script:
   - travis-tool.sh install_deps
