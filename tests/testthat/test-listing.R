@@ -1,10 +1,5 @@
-# tests for listing
-
-context("Listing Cryptocurrency Data")
-
-suppressPackageStartupMessages(library(dplyr))
+context("test-listing")
 
 test_that("Number of colums", {
-  d <- kRypto::listing()
-  expect_equal(ncol(d), 4)
+  expect_equal(ncol(kRypto::listing()), 4)
 })

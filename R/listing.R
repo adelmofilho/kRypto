@@ -11,9 +11,6 @@
 #' @name listing
 #'
 #' @import dplyr
-#' @import httr
-#' @importFrom  purrr map
-#'
 #'
 #' @examples
 #'

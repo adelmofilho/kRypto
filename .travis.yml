@@ -1,15 +1,8 @@
-language: r
+# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
 
-sudo: required
-
-env: _R_CHECK_CRAN_INCOMING_=FALSE
-
-r_packages:
-  - covr
-  - devtools
-
-r_github_packages:
-  - codecov/example-r
+language: R
+sudo: false
+cache: packages
 
 after_success:
-  - Rscript -e 'library(covr);codecov()'
+    - Rscript -e 'covr::codecov()'

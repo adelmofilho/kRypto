@@ -11,9 +11,6 @@
 #' @param cryptocurrency A vector with cryptocurrencies symbol
 #'
 #' @import dplyr
-#' @import httr
-#' @importFrom  purrr map
-#'
 #'
 #' @examples
 #'
@@ -21,7 +18,6 @@
 #'
 #'
 #' @export
-
 ticker <- function(cryptocurrency = c('BTC')) {
 
   cryptocurrency_list <- kRypto::cryptocurrency_list
@@ -30,7 +26,7 @@ ticker <- function(cryptocurrency = c('BTC')) {
 
     cols_change <- colnames(x)[1:4]
 
-    x %>% mutate_at(vars(cols_change), funs(as.character)) }
+    x %>% dplyr::mutate_at(vars(cols_change), funs(as.character)) }
 
   we <- function(x){
 
@@ -47,14 +43,14 @@ ticker <- function(cryptocurrency = c('BTC')) {
 
   as <- function(x){
 
-    dw <- GET(url = paste0('https://api.coinmarketcap.com/v2/ticker/',x)) %>%
-      content()
+    dw <- httr::GET(url = paste0('https://api.coinmarketcap.com/v2/ticker/',x)) %>%
+      httr::content()
 
     dados <- dw$data[1:8]
 
     dw_2 <- purrr::map(dados, we) %>% as.data.frame()
 
-    dw_2 <- dw_2 %>% bind_cols(as.data.frame(dw$data$quotes))
+    dw_2 <- dw_2 %>% dplyr::bind_cols(as.data.frame(dw$data$quotes))
 
     dw_2
   }
@@ -62,11 +58,11 @@ ticker <- function(cryptocurrency = c('BTC')) {
   row <- which(cryptocurrency_list$symbol %in% cryptocurrency)
 
   id <- cryptocurrency_list %>%
-    slice(row) %>%
-    select(id) %>%
+    dplyr::slice(row) %>%
+    dplyr::select(id) %>%
     unlist() %>% as.vector()
 
-  ticker_data <- map(id, as) %>%
+  ticker_data <- purrr::map(id, as) %>%
     purrr::map(delta) %>% bind_rows() %>%
     dplyr::as_tibble()
 
