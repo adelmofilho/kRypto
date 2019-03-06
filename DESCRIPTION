@@ -1,6 +1,6 @@
 Package: kRypto
 Title: Pull Cryptocurrency Data in Tidy Format Form Coinmarketcap API
-Version: 1.1.0
+Version: 1.1.1
 Authors@R: 
     person(given = "Adelmo",
            family = "Filho",
