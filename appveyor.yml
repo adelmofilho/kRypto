@@ -15,7 +15,9 @@ cache:
 
 # Adapt as necessary starting from here
 
-#environment:
+environment:
+  matrix:
+  - USE_RTOOLS: true
 #  matrix:
 #  - R_VERSION: 3.5.2
 #    RTOOLS_VERSION: 35
