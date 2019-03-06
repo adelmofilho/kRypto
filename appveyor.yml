@@ -16,7 +16,7 @@ cache:
 # Adapt as necessary starting from here
 
 environment:
-
+  matrix:
   - R_VERSION: devel
     R_ARCH: x64
     GCC_PATH: mingw_64
